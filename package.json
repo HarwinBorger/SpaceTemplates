@@ -2,9 +2,13 @@
   "name": "SpaceTemplates",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "itcss.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=production webpack",
+    "start": "NODE_ENV=development webpack-dashboard webpack-dev-server",
+    "itcss:stylelint": "stylelint 'templates/itcss/**/*.scss'",
+    "itcss:stylelint:fix": "stylelint 'templates/itcss/**/*.scss' --fix",
+    "test": "concurrently 'npm run stylelint' 'npm run build'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,28 @@
     "url": "https://github.com/HarwinBorger/SpaceTemplates/issues"
   },
   "homepage": "https://github.com/HarwinBorger/SpaceTemplates#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "concurrently": "^5.3.0",
+    "css-loader": "^3.6.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "husky": "^3.1.0",
+    "matchdep": "*",
+    "mini-css-extract-plugin": "^0.8.2",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-scss": "^2.1.1",
+    "sass-loader": "^8.0.2",
+    "sort-css-media-queries": "^1.5.0",
+    "style-loader": "^1.2.1",
+    "stylelint": "^11.1.1",
+    "stylelint-order": "^3.1.1",
+    "stylelint-scss": "^3.18.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dashboard": "^3.2.1"
+  },
   "dependencies": {
     "spaceframework": "^1.2.0"
   }
