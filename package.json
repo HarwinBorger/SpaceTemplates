@@ -1,6 +1,6 @@
 {
-  "name": "SpaceTemplates",
-  "version": "1.0.0",
+  "name": "spacetemplates",
+  "version": "0.1.0",
   "description": "",
   "main": "itcss.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "NODE_ENV=development webpack-dashboard webpack-dev-server",
     "itcss:stylelint": "stylelint 'templates/itcss/**/*.scss'",
     "itcss:stylelint:fix": "stylelint 'templates/itcss/**/*.scss' --fix",
-    "test": "concurrently 'npm run stylelint' 'npm run build'"
+    "test": "concurrently 'npm run itcss:stylelint' 'npm run build'"
   },
   "repository": {
     "type": "git",

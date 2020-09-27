@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var DashboardPlugin = require("webpack-dashboard/plugin");
 
 module.exports = {
-	entry: './index.js',
+	entry: './itcss.js',
 	mode: 'production',
 	module: {
 		rules: [{
