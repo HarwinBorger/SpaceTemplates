@@ -5,4 +5,12 @@
  * It’s important not to output any CSS from this directory.
  */
 
+// SpaceFramework default variables
 @import "~spaceframework/scss/1.settings/_settings";
+// SpaceFramework custom variables
+@import 'space-settings';
+@import 'fonts';
+@import 'text-presets';
+@import 'layout-presets';
+@import 'layout-presets-support';
+
