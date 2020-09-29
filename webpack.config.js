@@ -1,6 +1,5 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-var DashboardPlugin = require("webpack-dashboard/plugin");
 
 module.exports = {
 	entry: './itcss.js',
@@ -25,6 +24,5 @@ module.exports = {
 			filename: "spaceframework.css",
 			chunkFilename: "[id].css"
 		}),
-		new DashboardPlugin()
 	]
 };
