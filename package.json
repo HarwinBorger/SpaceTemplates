@@ -1,7 +1,7 @@
 {
   "name": "spaceframework-templates",
   "version": "0.1.0",
-  "description": "",
+  "description": "Templates for the spaceframework",
   "main": "itcss.js",
   "scripts": {
     "build": "NODE_ENV=production webpack",
